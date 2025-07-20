@@ -48,7 +48,7 @@ We have gone through the .bsv files required for modification which includes
 
 - Inorder to have a unique exception code for triggers stage5.bsv has been identified as the ideal stage. We have to study how the entire pipeline works with the exception works.
 
-- Currently, we are planning to go through the csrbox where some python codes are defined to implement trigger field decoding logic. Then we will look into implementing changes to the code.
+- Currently, we are planning to go through the csrbox where the generated bsv files are available to implement trigger field decoding logic. Then we will look into implementing changes to the code.
 
 - Also we have installed GDB and trying to install openocd to run a 3-window simulation to get a gist of how it works with regular core.
 
