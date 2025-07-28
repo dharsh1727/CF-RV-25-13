@@ -89,7 +89,7 @@ interface Ifc_s1_icache;
   interface Put#(IMem_core_response#(32, `iesize)) inst_response;
 endinterface:Ifc_s1_icache
 
-interface Ifc_s1_common;
+interface Ifc_s1_common;                                                  //using this in csrgrp2 to tranfer the data to stage1 but getting the circular import error
   method Action ma_update_eEpoch;
   method Action ma_update_wEpoch;
   method Action ma_csr_misa_c(Bit#(1) c);
