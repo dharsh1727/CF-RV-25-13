@@ -35,22 +35,22 @@ package csr_types ;
     } TriggerData0 deriving (Bits, FShow);
     
   typedef struct {
-    Bit#(4)   type_t;        // bits [3:0]
-    Bit#(1)   dmode;       // bit [4]
-    Bit#(6)   maskmax;     // bits [10:5]
-    Bit#(2)   sizehi;      // bits [12:11]
-    Bit#(1)   select;      // bit [13]
-    Bit#(1)   timing;      // bit [14]
-    Bit#(2)   size;        // bits [16:15]
-    Bit#(4)   action_;      // bits [20:17]
-    Bit#(1)   chain;       // bit [21]
-    Bit#(4)   match_type;  // bits [25:22]
-    Bit#(1)   machine;     // bit [26]
-    Bit#(1)   supervisor;  // bit [27]
-    Bit#(1)   user;        // bit [28]
-    Bit#(1)   execute;     // bit [29]
-    Bit#(1)   store;       // bit [30]
-    Bit#(1)   load;        // bit [31]
+    Bit#(4)   type_t;        
+    Bit#(1)   dmode;       
+    Bit#(6)   maskmax;     
+    Bit#(2)   sizehi;      
+    Bit#(1)   select;
+    Bit#(1)   timing;    
+    Bit#(2)   size;     
+    Bit#(4)   action_;      
+    Bit#(1)   chain;       
+    Bit#(4)   match_type;  
+    Bit#(1)   machine;     
+    Bit#(1)   supervisor;  
+    Bit#(1)   user;        
+    Bit#(1)   execute;    
+    Bit#(1)   store;       
+    Bit#(1)   load;        
   } Mcontrol6 deriving (Bits, Eq, FShow);
     typedef enum {Machine = 3, Hypervisor=2, Supervisor = 1, User = 0} Privilege_mode deriving(Bits, Eq, FShow);
 
