@@ -773,8 +773,8 @@ import ccore_types :: * ;
    `ifdef hypervisor
     method ActionValue#(Bit#(64)) mav_upd_on_trap(Bit#(7) cause, Bit#(64) pc, Bit#(64) tval, Bit#(64) tval2);
         
-            rg_dpc_warl <= pc;  // Use warl-compatible register
-            rg_dcsr_cause <= truncate(pack(cause)[2:0]);  // Store lower 3 bits
+            rg_dpc_warl <= pc;
+            rg_dcsr_cause <= truncate(pack(cause)[2:0]);
             return wr_mtvec;
         
     endmethod
